@@ -92,8 +92,8 @@ function Home() {
                                <div className="car-content d-flex align-items-center justify-content-between">
 
                                     <div className='text-left pl-2'>
-                                        <p>{car.name}</p>
-                                        <p> Rent Per Hour {car.rentPerHour} /-</p>
+                                        <p className='car-name'>{car.name}</p>
+                                        <p className='car-price'>₹{car.rentPerHour}/hr</p>
                                     </div>
 
                                     <div>

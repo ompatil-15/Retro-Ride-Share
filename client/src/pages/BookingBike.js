@@ -70,13 +70,16 @@ function BookingBike({ match }) {
         className="d-flex align-items-center"
         style={{ minHeight: "90vh" }}
       >
-        <Col lg={10} sm={24} xs={24} className="p-3">
+        <Col lg={10} sm={20} xs={20} className="p-3">
           <img
             src={car.image}
             className="carimg2 bs1 w-100"
             data-aos="flip-left"
             data-aos-duration="1500"
           />
+          
+          <p className="car-name">{car.name}</p>
+
         </Col>
 
         <Col lg={10} sm={24} xs={24} className="text-right">
@@ -85,7 +88,7 @@ function BookingBike({ match }) {
           </Divider>
           <div style={{ textAlign: "right" }}>
             <p>{car.name}</p>
-            <p>{car.rentPerHour} Rent Per hour /-</p>
+            <p>₹{car.rentPerHour}/hr</p>
             <p>Type / Description: {car.fuelType}</p>
             <p> Weight : {car.capacity}</p>
           </div>
